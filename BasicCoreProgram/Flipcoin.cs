@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BasicCoreProgram
 {
-    class Flip_Coin
+    class Flipcoin
     {
         Random Flip = new Random();
         double TOTAL = 35;

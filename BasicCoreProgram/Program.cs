@@ -25,7 +25,7 @@ namespace BasicCoreProgram
             switch (choice)
             {
                 case FLIP_COIN:
-                    Flip_Coin flip_coin = new Flip_Coin();
+                    Flipcoin flip_coin = new Flipcoin();
                     flip_coin.FlipCoin();
                     break;
                 case LEAP_YEAR:
