@@ -9,7 +9,7 @@ namespace BasicCoreProgram
             //variable
             int choice;
             //Constants
-            const int FLIP_COIN = 1, LEAP_YEAR = 2, POWER = 3, HARMONIC_NUMBER = 4,  QUOTIENT_AND_REMAINDER = 5, SWAP_NUMBER = 6, EVEN_ODD = 7, VOWEL_CONSONANT = 8, THREE_NUMBER = 9;
+            const int FLIP_COIN = 1, LEAP_YEAR = 2, POWER = 3, HARMONIC_NUMBER = 4,  QUOTIENT_AND_REMAINDER = 5, SWAP_NUMBER = 6, EVEN_ODD = 7, VOWEL_CONSONANT = 8, THREE_NUMBER = 9, FACTOR = 10;
             Console.WriteLine("Press 1 : Flip Coin Program");
             Console.WriteLine("Press 2 : Leap Year Program");
             Console.WriteLine("Press 3 : Power Program");
@@ -19,6 +19,7 @@ namespace BasicCoreProgram
             Console.WriteLine("Press 7 : Even Odd Program");
             Console.WriteLine("Press 8 : Vowel Consonant Program");
             Console.WriteLine("Press 9 : Largest between Three Number Program");
+            Console.WriteLine("Press 10 : Prime Factor Program");
             Console.WriteLine("Enter your choice");
             choice = Convert.ToInt32(Console.ReadLine());
 
@@ -59,6 +60,10 @@ namespace BasicCoreProgram
                 case THREE_NUMBER:
                     ThreeNumber threeNumber = new ThreeNumber();
                     threeNumber.CheckLargest();
+                    break;
+                case FACTOR:
+                    PrimeFactor primefactor = new PrimeFactor();
+                    primefactor.Factorials();
                     break;
                 default:
                     Console.WriteLine("Enter a right choice");

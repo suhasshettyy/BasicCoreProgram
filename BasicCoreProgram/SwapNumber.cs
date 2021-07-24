@@ -15,9 +15,9 @@ namespace BasicCoreProgram
         }
         public void Swap()
         {
-            temp = firstNumber;
-            firstNumber = secondNumber;
-            secondNumber = temp;
+            firstNumber = firstNumber + secondNumber;
+            secondNumber = firstNumber - secondNumber;
+            firstNumber = firstNumber - secondNumber;
             Console.WriteLine("First number after swap:" + firstNumber);
             Console.WriteLine("Second number after swap:" + secondNumber);
         }
