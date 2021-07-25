@@ -4,7 +4,7 @@ namespace BasicCoreProgram
 {
     class Program
     {
-        static void Main(string[] args)
+        public void Viewprogram()
         {
             //variable
             int choice;
@@ -69,6 +69,18 @@ namespace BasicCoreProgram
                     Console.WriteLine("Enter a right choice");
                     break;
             }
+            Console.WriteLine("\nPress Y to run other programs or else press N to exit");
+            Char ch = Convert.ToChar(Console.ReadLine());
+            if (ch == 'Y' || ch == 'y')
+                Viewprogram();
+            else
+                Console.WriteLine("Thank You");
+        }
+        static void Main(string[] args)
+        {
+            Program program = new Program();
+            program.Viewprogram();
         }
     }
 }
+       
